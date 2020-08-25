@@ -1,0 +1,98 @@
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #F2F2F2;
+}
+
+body > div {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#main-container {
+  width: 39vw;
+  background-color: #00354B;
+  color: #F2F2F2;
+}
+
+#about-me-container, #projects-container {
+  flex-grow: 1;
+}
+
+/* about me column + project 3 tile */
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me-container > div {
+  width: 100%;
+}
+
+#about-me {
+  flex-grow: 1;
+  background-color: #3A596A;
+  color: #F2F2F2;
+}
+
+#project-3 {
+  height: 39%;
+}
+
+/* Project column - projects 1 & 2 tiles */
+#projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects-container > div {
+  width: 100%;
+}
+
+#projects-description {
+  flex-grow: 1;
+  background-color: #F8CB87;
+}
+
+#project-1, #project-2 {
+  height: 39%;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  body > div {
+    width: 100vw;
+    flex-grow: 1;
+  }
+
+  #main-container {
+    width: 100vw;
+  }
+
+  /* place this column at the end or the order, then reverse its 
+  content order to create a continuous view of the projects in the 
+  mobile version */
+  #about-me-container {
+    flex-direction: column-reverse;
+    order: 3;
+  }
+  
+}
