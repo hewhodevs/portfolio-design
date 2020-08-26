@@ -1,3 +1,7 @@
+/* Google Fonts */
+/* Roboto light 300 */
+/* Raleway extra light 200 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
 
 body {
   box-sizing: border-box;
@@ -16,6 +20,71 @@ body > div {
   width: 39vw;
   background-color: #00354B;
   color: #F2F2F2;
+}
+
+#navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00354B;
+  border: none;
+  outline: none;
+  border: 1px solid red;
+}
+
+#navbar > a {
+  color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 40px
+}
+
+#title-container {
+  box-sizing: border-box;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#title {
+  border: 1px solid pink;
+  margin-right: 60px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 140px;
+  color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#firstname {
+  margin-right: 110px;
+}
+
+#surname {
+  text-align: right;
+}
+
+#role {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  text-align: right;
+  width: 100%;
+  color: #EFC07B;
+  border: 1px solid red;
 }
 
 #about-me-container, #projects-container {
@@ -85,6 +154,30 @@ body > div {
 
   #main-container {
     width: 100vw;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #navbar > a {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  #title-container {
+    margin-top: 80px;
+    padding-right: 10px;
+  }
+
+  #title {
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 90px;
   }
 
   /* place this column at the end or the order, then reverse its 
