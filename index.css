@@ -20,7 +20,6 @@ body > div {
   width: 39vw;
   background-color: #00354B;
   color: #F2F2F2;
-  border: 1px solid red;
 }
 
 #navbar {
@@ -31,7 +30,6 @@ body > div {
   background-color: #00354B;
   border: none;
   outline: none;
-  border: 1px solid red;
 }
 
 #navbar > a {
@@ -52,7 +50,6 @@ body > div {
 }
 
 #title {
-  border: 1px solid pink;
   margin-right: 60px;
 }
 
@@ -93,7 +90,6 @@ h2 {
   text-align: right;
   width: 100%;
   color: #EFC07B;
-  border: 1px solid red;
 }
 
 #about-me-container, #projects-container {
