@@ -67,6 +67,7 @@ h1 {
 h2 {
   padding: 0;
   margin: 0;
+  font-size: 35px;
 }
 
 #firstname {
@@ -89,6 +90,7 @@ h2 {
 
 #about-me-container, #projects-container {
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 /* about me column + project 3 tile */
@@ -105,6 +107,7 @@ h2 {
   flex-grow: 1;
   background-color: #3A596A;
   color: #F2F2F2;
+  padding: 30px;
 }
 
 #project-3 {
@@ -124,6 +127,7 @@ h2 {
 #projects-description {
   flex-grow: 1;
   background-color: #F8CB87;
+  padding: 30px;
 }
 
 #project-1, #project-2 {
