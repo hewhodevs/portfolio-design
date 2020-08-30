@@ -20,6 +20,7 @@ body > div {
   width: 39vw;
   background-color: #00354B;
   color: #F2F2F2;
+  border: 1px solid red;
 }
 
 #navbar {
@@ -53,6 +54,13 @@ body > div {
 #title {
   border: 1px solid pink;
   margin-right: 60px;
+}
+
+#socials-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
 }
 
 h1 {
