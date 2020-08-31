@@ -2,6 +2,8 @@
 /* Roboto light 300 */
 /* Raleway extra light 200 */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+/* Roboto Regular 400 & Light 300 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 body {
   box-sizing: border-box;
@@ -16,9 +18,16 @@ body > div {
   box-sizing: border-box;
 }
 
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 #main-container {
   width: 39vw;
-  background-color: #00354B;
+  background-color: #00294b;
   color: #F2F2F2;
 }
 
@@ -27,17 +36,23 @@ body > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00354B;
+  background-color: #00294b;
   border: none;
   outline: none;
+  z-index: 99;
 }
 
 #navbar > a {
   color: #f2f2f2;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 22px;
   text-decoration: none;
-  padding: 40px
+  padding: 50px 30px;
+}
+
+#navbar > a:hover {
+  color: #EFC07B;
 }
 
 #title-container {
@@ -58,12 +73,13 @@ body > div {
   bottom: 0;
   left: 0;
   padding: 40px;
+  z-index: 1;
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  font-size: 140px;
+  font-size: 115px;
   color: #F2F2F2;
   margin: 0;
   padding: 0;
@@ -73,23 +89,26 @@ h2 {
   padding: 0;
   margin: 0;
   font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 #firstname {
-  margin-right: 110px;
+  margin-right: 130px;
 }
 
 #surname {
   text-align: right;
+  margin-right: 45px;
 }
 
 #role {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  font-size: 32px;
+  font-size: 30px;
   text-align: right;
-  width: 100%;
   color: #EFC07B;
+  padding-right: 10px;
 }
 
 #about-me-container, #projects-container {
@@ -109,9 +128,13 @@ h2 {
 
 #about-me {
   flex-grow: 1;
-  background-color: #3A596A;
+  background-color: #2a5168;
   color: #F2F2F2;
-  padding: 30px;
+  padding: 45px 30px 30px 30px;
+}
+
+#project-heading {
+  color: #00294b;
 }
 
 #project-3 {
@@ -130,8 +153,8 @@ h2 {
 
 #projects-description {
   flex-grow: 1;
-  background-color: #F8CB87;
-  padding: 30px;
+  background-color: #ebc389;
+  padding: 45px 30px 30px 30px;
 }
 
 #project-1, #project-2 {
@@ -165,6 +188,8 @@ h2 {
   }
 
   #navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -184,8 +209,16 @@ h2 {
     margin-right: 10px;
   }
 
+  #surname {
+    margin-right: 60px;
+  }
+
   h1 {
     font-size: 90px;
+  }
+
+  #role {
+    font-size: 26px;
   }
 
   /* place this column at the end or the order, then reverse its 
