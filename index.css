@@ -21,7 +21,7 @@ body > div {
 p {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -43,6 +43,7 @@ p {
 }
 
 #navbar > a {
+  visibility: hidden;
   color: #f2f2f2;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -150,9 +151,27 @@ h2 {
 
 #about-me {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #2a5168;
   color: #f2f2f2;
   padding: 45px 30px 30px 30px;
+}
+
+#about-me a {
+  color: #efefef;
+}
+
+#skills-icon-container {
+  padding-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon {
+  padding: 20px;
 }
 
 #project-heading {
@@ -219,6 +238,7 @@ h2 {
   }
 
   #navbar > a {
+    visibility: visible;
     font-size: 18px;
     padding: 20px;
   }
