@@ -14,7 +14,7 @@ body {
 }
 
 body > div {
-  height: 100vh;
+  /* height: 100vh; */
   box-sizing: border-box;
 }
 
@@ -87,11 +87,11 @@ p {
 }
 
 #twitter-icon:hover {
-  color: #50abf1;
+  color: #5db9ff;
 }
 
 #github-icon:hover {
-  color: #ff48ff;
+  color: #fd65fd;
 }
 
 #codepen-icon:hover {
@@ -178,7 +178,7 @@ h2 {
   color: #00294b;
 }
 
-#project-3 {
+#project-3-container {
   height: 39%;
 }
 
@@ -198,9 +198,70 @@ h2 {
   padding: 45px 30px 30px 30px;
 }
 
-#project-1,
-#project-2 {
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-1-container,
+#project-2-container {
   height: 39%;
+}
+
+#project-1-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#project-2-container, #project-3-container {
+  padding-top: 5px;
+}
+
+#project-2-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#project-3-container {
+  padding-left: 35px;
+  padding-right: 5px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.project-img {
+  border: 2px solid #00294B;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#project-1 {
+  justify-content: flex-end;
+}
+
+#project-2, #project-3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.project-img {
+  width: 100%;
 }
 
 .center-content {
@@ -227,6 +288,7 @@ h2 {
 
   #main-container {
     width: 100vw;
+    height: 100vh;
   }
 
   #navbar {
@@ -270,5 +332,25 @@ h2 {
   #about-me-container {
     flex-direction: column-reverse;
     order: 3;
+  }
+
+  #about-me {
+    /* allow for sticky navbar */
+    height: calc(100vh - 65px);
+    min-height: 400px;
+  }
+
+  .project-container {
+    padding-top: 20px;
+  }
+
+  #project-2-container, #project-3-container {
+    padding-top: 20px;
+  }
+
+  #project-3-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
   }
 }
